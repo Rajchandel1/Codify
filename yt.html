@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        body{
+            background-color: #160D31;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        nav{
+            color: white;
+            border-bottom: solid white;
+            padding: 5px 20px;
+        }
+
+        nav i{
+            color: white;
+            cursor: pointer;
+        }
+        .header{
+            padding: 10vh 20vh;
+        }
+
+        .header h1{
+            font-size: 4vw;
+            text-align: center;
+            z-index: 9;
+        }
+
+        .header span{
+            padding: 5px 20px;
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+
+        }
+
+        .header h4{
+            border-bottom: solid white .5px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .aibox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .aitools{
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            box-shadow: 0px 0px 10px #9900E4;
+            padding: 20px 20px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            margin: 2vh;
+            
+        }
+
+        .aitools img{
+            height: 30%;
+            width: 50%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+        
+        .aitools H1{
+            font-size: 1.5vw;
+            width: 40vh;
+            height: auto;
+            text-align: center;
+        }
+
+        .aitools h4{
+            height: auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        .aitools button{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+        }
+
+        .aitools a{
+            text-decoration: none;
+            color: white;
+            width: 90%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+                
+.coffee{
+    border-top: solid white 1px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.coffee img{
+    height: 5vh;
+}
+
+.coffee span{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #9900E4;
+    margin-top: 2vh;
+}
+
+        
+        @media (max-width:600px){
+             
+             nav{
+                 color: white;
+                 border-bottom: solid white;
+                 padding: 5px 20px;
+             }
+     
+             nav i{
+                 color: white;
+                 cursor: pointer;
+             }
+             .header{
+                 padding: 10px;
+             }
+     
+             .header h1{
+                 font-size: 6vw;
+                 text-align: center;
+                 z-index: 9;
+             }
+     
+             .header span{
+                 background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+                 border-radius: 20px;
+                 filter: drop-shadow(0px 0px 200px #9900E4);
+                 z-index: 8;
+     
+             }
+     
+             .header h4{
+                 border-bottom: solid white .5px;
+                 padding-bottom: 10px;
+                 text-align: center;
+             }
+     
+                   
+     .coffee{
+         border-top: solid white 1px;
+         margin: 20px;
+         padding: 10px 20px;
+     }
+     
+     .coffee img{
+         height: 3vh;
+     }
+     
+     .coffee span{
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 20px;
+         color: white;
+         background-color: #9900E4;
+         margin-top: 2vh;
+     }
+             }
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1><i class="ri-arrow-left-line" onclick="window.location='index.html'"></i></h1>
+        </nav>
+        <div class="header">
+            <h1>Discover All <span>YouTube Channels</span> Which Can Help You In Coding</h1>
+            <h4>
+                Find The Bestest Youtubers from whom you can learn in intresting and fun way.
+            </h4>
+        </div>
+        <div class="aibox">
+       
+    </div>
+  
+<div class="coffee">
+    <h3>support this project</h3>
+    <span><a href="" target="_blank"><img src="https://influencermarketinghub.com/wp-content/uploads/2021/04/BuyMeACoffee.png" alt=""></a></span>
+</div>
+    </main>
+    <script>
+        var arr =[
+            {img:"https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg",heading:"Sheriyans coding School",descripion:"fundamentals of web development (HTML, CSS and javascript), <br>concepts of UI/UX design and responsiveness, <br> learn amazing animation libraries like gsap, and locomotive js, <br> backend with amazing projects.",link:"https://www.youtube.com/@thesheryianscodingschool/featured"},
+            {img:"https://codesandbox.io/api/v1/sandboxes/py5d3x/screenshot.png",heading:"HuXn WebDev",descripion:"Teaching an extensive range of technologies, frameworks, and programming languages, <br> React and Angular to Python, Golang, js, MERN, NEXT.js and more - his expertise in the field is unparalleled, <br> his love for User Interface Design that truly set him apart.",link:"https://www.youtube.com/@huxnwebdev/featured"},
+            {img:"https://i.ytimg.com/vi/QIFhevCENrU/maxresdefault.jpg",heading:"Chai Aur Code",descripion:"A channel dedicated to chai and coding in HINDI, <br> learn  javascript and backend in a structural manner, <br> Perfect Channel For Complete coding Begginners To Learn Coding In Hindi, <br> His Teaching Style Is Clear And To the Point You Will Definetly Like it.",link:"https://www.youtube.com/@chaiaurcode"},
+            {img:"https://i.ytimg.com/vi/1fcXtXj7N1w/maxresdefault.jpg",heading:"Javascript mastery",descripion:"Master modern web development with a project-based approach, <br> Learn JS, NEXT.js, MERN, React, Three.js, GSAP And Modern UI/UX Designs",link:"https://www.youtube.com/@javascriptmastery/featured"},
+            {img:"https://i.ytimg.com/vi/8VJKuatRQ7Y/maxresdefault.jpg",heading:"TiffinTech",descripion:"Coding Advice/Tips, Carrer Advice/Tips, <br> Teaching Coding concepts And Roadmaps, <br>Keep You Updated with Latest Tech News, AI Tools, <br> And Some Other Useful And Intresting Videos for Coders. ",link:"https://www.youtube.com/@TiffInTech"},
+            {img:"https://th.bing.com/th/id/OIP._3_HhMtkUtxO4eQMN0-YwAHaET?w=284&h=180&c=7&r=0&o=5&pid=1.7",heading:"Bro Code",descripion:"Detailed And funn Tutorials For Most Famous Languages <br> HTML, CSS, JS, React, PHP, MongoDB, MySQl,<br> c, c++, c#, DSA, JAVA, Python.",link:"https://www.youtube.com/@BroCodez/featured"},
+            {img:"https://i.ytimg.com/vi/gun8OiGtlNc/maxresdefault.jpg",heading:"FireShip",descripion:" short and fun videos and projects to help you level up your programming skills",link:"https://www.youtube.com/@Fireship/featured"},
+            {img:"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1384b54bbf3b1cd1ef1a17f354353582.jpg",heading:"Red Stapler",descripion:" tutorial videos of cool CSS effect, Web Design ideas, JavaScript libraries, Node.js, HTML, <br> dev tips and much more! <br> New videos upload weekly. Monday or Thursday",link:"https://www.youtube.com/@RedStapler_channel"}
+        ]
+        var wrapper = document.querySelector(".aibox")
+        var clutter = ""
+
+        arr.forEach(function(arr){
+            clutter+=`<div class="aitools">
+            <img src="${arr.img}" alt="ai tool">
+            <h1>${arr.heading}</h1>
+            <h4>${arr.descripion}</h4>
+            <a href="${arr.link}" target="_blank">Visit Channel</a>
+        </div>
+            `
+        })
+
+        wrapper.innerHTML = clutter
+    </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        body{
+            background-color: #160D31;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        nav{
+            color: white;
+            border-bottom: solid white;
+            padding: 5px 20px;
+        }
+
+        nav i{
+            color: white;
+
+            cursor: pointer;
+        }
+        .header{
+            padding: 10vh 20vh;
+        }
+
+        .header h1{
+            font-size: 4vw;
+            text-align: center;
+            z-index: 9;
+        }
+
+        .header span{
+            padding: 5px 20px;
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+
+        }
+
+        .header h4{
+            border-bottom: solid white .5px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .exten{
+            margin: 10px;
+            width: fit-content;
+            padding: 5px 20px;
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+            margin-bottom: 2vh;
+            box-shadow: 0px 0px 10px #9900E4;
+
+        }
+
+        .extension,.web,.fun{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .aitools{
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            box-shadow: 0px 0px 10px #9900E4;
+            padding: 40px 40px;
+            height: auto;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            margin: 2vh;
+            
+        }
+
+        .aitools img{
+            height: 20vh;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+        
+        .aitools H1{
+            font-size: 1.5vw;
+            width: 40vh;
+            height: auto;
+        }
+
+        .aitools h4{
+            height: auto;
+            width: 40vh;
+        }
+
+        .aitools button{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+        }
+
+        .aitools a{
+            text-decoration: none;
+            color: white;
+            width: 90%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        
+.coffee{
+    border-top: solid white 1px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.coffee img{
+    height: 5vh;
+}
+
+.coffee span{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #9900E4;
+    margin-top: 2vh;
+}
+
+
+@media (max-width:600px){
+             
+             nav{
+                 color: white;
+                 border-bottom: solid white;
+                 padding: 5px 20px;
+             }
+     
+             nav i{
+                 color: white;
+                 cursor: pointer;
+             }
+             .header{
+                 padding: 10px;
+             }
+     
+             .header h1{
+                 font-size: 6vw;
+                 text-align: center;
+                 z-index: 9;
+             }
+     
+             .header span{
+                 background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+                 border-radius: 20px;
+                 filter: drop-shadow(0px 0px 200px #9900E4);
+                 z-index: 8;
+     
+             }
+     
+             .header h4{
+                 border-bottom: solid white .5px;
+                 padding-bottom: 10px;
+                 text-align: center;
+                
+             }
+             .exten{
+                font-size: 2.5vw;
+            margin: 10px;
+            width: fit-content;
+            padding: 5px 10px;
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+            margin-bottom: 2vh;
+            box-shadow: 0px 0px 10px #9900E4;
+
+        }
+
+                   
+     .coffee{
+         border-top: solid white 1px;
+         margin: 20px;
+         padding: 10px 20px;
+     }
+     
+     .coffee img{
+         height: 3vh;
+     }
+     
+     .coffee span{
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 20px;
+         color: white;
+         background-color: #9900E4;
+         margin-top: 2vh;
+     }
+             }
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1><i class="ri-arrow-left-line" onclick="window.location='index.html'"></i></h1>
+        </nav>
+        <div class="header">
+            <h1>Discover All <span>Useful Tools</span> Which Can Help You In Coding</h1>
+            <h4>
+                Find The Bestest Tools, websites, Extensions Picked From All Over The Internet Which Will Be helpful In Your Coding And Other tasks
+            </h4>
+        </div>
+        <div class="exten">
+            <h1>Extensions</h1>
+        </div>
+        <div class="extension">
+    </div>
+    <div class="exten">
+        <h1>Must Use Websites</h1>
+    </div>
+    <div class="web">
+</div>
+
+<div class="exten">
+    <h1>Fun Websites</h1>
+</div>
+<div class="fun">
+</div>
+</div>
+<div class="coffee">
+    <h3>support this project</h3>
+    <span><img src="https://influencermarketinghub.com/wp-content/uploads/2021/04/BuyMeACoffee.png" alt=""></span>
+</div>
+    </main>
+    <script>
+        var arr =[
+            {img:"https://th.bing.com/th/id/OIP.U56b0rBHYmA6FmK5OgBtxgHaC9?w=346&h=140&c=7&r=0&o=5&pid=1.7",heading:"Color Zilla",description:"Select any website Color and use that color in yoour website.(chrome)",link:"https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?refid=bingshortanswer"},
+            {img:"https://th.bing.com/th/id/OIP.t2wR1Bg8ax96H1yrYmb8bwHaDx?w=348&h=178&c=7&r=0&o=5&pid=1.7",heading:"Wapplyzer",description:"Identify the technologies powering any website.(chrome)",link:"https://www.wappalyzer.com/"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/html-validator-chrome-extension.jpg",heading:"HTML Validator",description:"Check HTML code for errors and ensure proper syntax.(chrome)",link:"https://chromewebstore.google.com/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/Windows-resizer-chrome-extension.jpg",heading:"Window Resizer",description:"Simulate different screen sizes and resolutions.(chrome)",link:"https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh/"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/BrowserStack-chrome-extension.jpg",heading:"BrowserStack",description:"Live cross-browser testing that lets you preview your website in various browsers.(chrome)",link:"https://chromewebstore.google.com/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/What-font-chrome-extension.jpg",heading:"WhatFont",description:"Whatfont can show you the family,size,weight and colour.(chrome)",link:"https://chromewebstore.google.com/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/CSSViewer-chrome-extension-demo.jpg",heading:"CSS Viewer",description:"Inspect and analyze CSS styles applied to elements on a webpage.(chrome)",link:"https://chromewebstore.google.com/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/React-Developer-Tools-chrome-extension.jpg",heading:"React Developer Tools",description:"open-source React JavaScript library.(chrome)",link:"https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/json-viewer-extension.jpg",heading:"JSON Viewer",description:"Render JSON data in a human-readable format.(chrome)",link:"https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/check-my-links-chrome-extension.jpg",heading:"Check My Links",description:"It’s a super-simple way to check for broken links.(chrome)",link:"https://chromewebstore.google.com/detail/ojkcdipcgfaekbeaelaapakgnjflfglf"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2020/11/checkbot-chrome-extension.jpg",heading:"Checkbot",description:"it checks a page for links, errors, security, performance, SEO.(chrome)",link:"https://chromewebstore.google.com/detail/checkbot-seo-web-speed-se/dagohlmlhagincbfilmkadjgmdnkjinl"},
+            {img:"https://cdn.shortpixel.ai/spai/w_788+q_lossless+ret_img+to_webp/wpastra.com/wp-content/uploads/2024/05/Hover-Console.png",heading:" Hover Console",description:"Hover Console simplifies JavaScript debugging by delivering real-time messages directly on your screen.(chrome)",link:"https://chromewebstore.google.com/detail/hover-console/aphoemnhgnocfcelkiiggcjpmklbeloo"},
+            {img:"https://th.bing.com/th/id/OIP.LW7cc7gD-SlEqEnITe2hFwHaEo?w=265&h=180&c=7&r=0&o=5&pid=1.7",heading:"Web Developer",description:"it contains a range of useful tools that any dev can use.(chrome)",link:"https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"},
+            {img:"https://miro.medium.com/v2/resize:fit:828/format:webp/1*OR-UgKOENZRIwDpUkTR8Bw.png",heading:"Github Copilot",description:"assist developers in writing code more efficiently.(vs code)",link:"https://marketplace.visualstudio.com/items?itemName=GitHub.copilotvs"},
+            {img:"https://miro.medium.com/v2/resize:fit:828/format:webp/1*P3cK9SNdprAp2svb9aPPOw.png",heading:"JavaScript (ES6) Code Snippets",description:"providing shortcuts for common ES6 features and patterns.(vs code)",link:"https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets"},
+            {img:"https://miro.medium.com/v2/resize:fit:828/format:webp/1*bw-WEnIpsMo4vfobf4aO0Q.png",heading:"Live Server",description:"automatically refreshing the browser whenever changes are made to the project files.(vs code)",link:"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"},
+            {img:"https://miro.medium.com/v2/resize:fit:828/format:webp/1*gmvKjAho7T13J9mH15hZ_w.png",heading:"Prettier",description:"automatically formatting code according to predefined rules and configurations.(vs code)",link:"https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock"},
+            {img:"https://pbs.twimg.com/media/FiytOB9VUAACRCu.png",heading:"CodeSnap",description:"simplifies the process of taking code screenshots. It captures your code snippets and generates an image file",link:"https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"},
+            {img:"https://i.ytimg.com/vi/OJuD84HSWN8/maxresdefault.jpg",heading:" Code Runner",description:"Execute code snippets or entire files in various programming languages.",link:"https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner"},
+            {img:"https://th.bing.com/th/id/OIP.z71bI_COgAEtDzIo-L7LsAHaE3?w=238&h=180&c=7&r=0&o=5&pid=1.7",heading:"Night Owl",description:"provides a soothing and eye-friendly color palette for your code editor.",link:"https://marketplace.visualstudio.com/items?itemName=sdras.night-owl"},
+            {img:"https://i1.wp.com/dailydotnettips.com/wp-content/uploads/2018/04/VSCode-Icons.jpg?fit=665%2C402&ssl=1",heading:"vscode-icons",description:"replacing the default file icons with a vast collection of attractive and intuitive icons.",link:"https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons"}
+            
+        ]
+
+        var arr1 = [
+            {img:"https://assets-global.website-files.com/636dbee261df29040c8db281/6434c77554422e7d9d3b4fb3_github-black-background.webp",heading:"Github",description:" It is a code-hosting platform where users can update codes or files and track their updates.",link:"https://github.com/"},
+            {img:"https://th.bing.com/th?id=OIP.w98XTQrrup0yjjFUhUBY7wHaD3&w=346&h=180&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",heading:"BlackBox",description:"helps developers with coding questions. It can explain code,images and assist with code writing.",link:"https://www.blackbox.ai/"},
+            {img:"https://th.bing.com/th/id/OIP.7VL19R7wdmS9YVqTLVafwgHaHa?w=164&h=180&c=7&r=0&o=5&pid=1.7",heading:"W3 Schools",description:"free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects.",link:"https://www.w3schools.com/"},
+            {img:"https://th.bing.com/th/id/OIP.-c_NOdvg3f3cC_vz5ktb4wHaCp?w=315&h=180&c=7&r=0&o=5&pid=1.7",heading:"Hacker News",description:"most popular online destinations for developers and programmers to find new tools and technologies.",link:"https://news.ycombinator.com/"},
+            {img:"https://th.bing.com/th?id=OIP.3pCvzK8UD1FzVLlV8W-sqwHaD3&w=345&h=180&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",heading:"TutorialZine",description:"offers a large collection of jQuery tutorials.",link:"https://tutorialzine.com/"},
+            {img:"https://cdn.dribbble.com/users/9354613/screenshots/18243144/media/ee8164e7c0ed23e67f87572a3db6a4bc.jpg?compress=1&resize=840x630&vertical=top",heading:"HTML5 doctor",description:" It's a blog, but it also has articles and videos that can help you learn about HTML5.",link:"https://html5doctor.com/"},
+            {img:"https://th.bing.com/th/id/OIP.ypz_d6GL7n2nXfQnbw_ARAHaFj?w=236&h=180&c=7&r=0&o=5&pid=1.7",heading:"Vercel",description:"It offers reliable and global serverless deployments, with instant scale and performance",link:"https://www.bing.com/search?q=vercel&FORM=HDRSC1"},
+            {img:"https://th.bing.com/th/id/OIP.BD52NZkfNf_SCrScq6slfQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7",heading:"Unsplash",description:"High quality Images for Your Website",link:"https://unsplash.com/"},
+            {img:"https://th.bing.com/th/id/OIP.FDeGuvRu3wRceJFQvHNXhgHaDt?w=322&h=175&c=7&r=0&o=5&pid=1.7",heading:"Resumake",description:"helps you create stunning resumes in minutes. Choose from various templates and customize your content.",link:"https://resumake.io/"},
+            {img:"https://th.bing.com/th/id/OIP.DENauUixUf2DS-VfgKCXlAHaD2?w=337&h=180&c=7&r=0&o=5&pid=1.7",heading:"LeetCode",description:" best place for everyone to start practicing and learning codingg. No matter if you are a beginner or a master, there are always new topics waiting for you to explore.",link:"https://leetcode.com/"},
+            {img:"https://th.bing.com/th/id/OIP.MK_dJNpYGWchvAMlnHT02wHaHa?w=171&h=180&c=7&r=0&o=5&pid=1.7",heading:"Linkdin",description:"Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",link:"https://in.linkedin.com/"},
+            {img:"https://th.bing.com/th/id/OIP.rBf_gk0dP04kIR-WmU0rDQHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7",heading:"MIT OCW",description:" Learn from MIT faculty and experts on topics such as machine learning, quantum information, urban mobility, and more.",link:"https://ocw.mit.edu/"},
+           
+        ]
+
+        var arr2 = [
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--NRkuU8Q6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z7vp6dq8ff98hsmwobbz.png",heading:"CodeCombat",description:"fun and engaging game-like environment that makes it easier for beginners to understand programming concepts.",link:"https://codecombat.com/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--90XMz435--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/37b61rtb90sxtj42wdtg.png",heading:" CodinGame",description:"solve puzzles, write algorithms and compete against others. It offers a variety of programming languages",link:"https://www.codingame.com/start/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--qG4AAEil--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/en9vts69p8ervyec0dn1.png",heading:"CSS Diner",description:"you'll learn the basics of how CSS selectors work in a game-like environment.",link:"https://flukeout.github.io/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--HwqEkT-4--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y208b9k9kgp7kprhdwwr.png",heading:" Flexbox Froggy",description:" fun and interactive game designed to help beginners learn how to use CSS Flexbox.",link:"https://flexboxfroggy.com/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--aXEewsLP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4kty1rsq5mp26pgbz0fb.png",heading:"CheckiO",description:"variety of coding challenges and puzzles, which users must solve using Python or TypeScript ",link:"https://checkio.org/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--53cZ3wOV--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2o9vfbk8sprmjxzf4rvi.png",heading:" VIM Adventures",description:" unique and fun way to learn how to use the Vim text editor.",link:"https://vim-adventures.com/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--PDfMWq1m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aw0ynky6ora02k6qzstn.png",heading:" JS Robot",description:"You’ll write JavaScript code to control the robot's movements, to collect coins, avoid obstacles, and reach the end of each stage.",link:"https://lab.reaal.me/jsrobot/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--8rT9Y28m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q8ay5wndqrcyqtvxf4ia.png",heading:" Mastery Games",description:"The website has three games to play and learn: Grid Critters, Flexbox Zombies and Service Workies.",link:"https://mastery.games/"},
+            {img:"https://res.cloudinary.com/practicaldev/image/fetch/s--0_uClV_h--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dnpqup0hb9mzcifags7n.png",heading:"Coding Fantasy",description:"Say no to boring coding videos, courses and articles with Coding Fantasy.",link:"https://codingfantasy.com/"},
+        ]
+
+        var wrapper = document.querySelector(".extension")
+        var clutter = ""
+
+        arr.forEach(function(arr){
+            clutter+=`
+            <div class="aitools">
+                
+            <img src="${arr.img}" alt="ai tool">
+            <h1>${arr.heading}</h1>
+            <h4>${arr.description}</h4>
+            <a href="${arr.link}" target="_blank">Check out</a>
+        </div>
+            `
+        })
+
+        wrapper.innerHTML = clutter
+
+        var wrapper = document.querySelector(".web")
+        var clutter = ""
+
+        arr1.forEach(function(arr){
+            clutter+=`
+            <div class="aitools">
+                
+            <img src="${arr.img}" alt="ai tool">
+            <h1>${arr.heading}</h1>
+            <h4>${arr.description}</h4>
+            <a href="${arr.link}" target="_blank">Check out</a>
+        </div>
+            `
+        })
+
+        wrapper.innerHTML = clutter
+
+        var wrapper = document.querySelector(".fun")
+        var clutter = ""
+
+
+        arr2.forEach(function(arr){
+            clutter+=`
+            <div class="aitools">
+                
+            <img src="${arr.img}" alt="ai tool">
+            <h1>${arr.heading}</h1>
+            <h4>${arr.description}</h4>
+            <a href="${arr.link}" target="_blank">Check out</a>
+        </div>
+            `
+        })
+
+        wrapper.innerHTML = clutter
+
+    </script>
+</body>
+</html>

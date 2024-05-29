@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        body{
+            background-color: #160D31;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav{
+            color: white;
+            border-bottom: solid white;
+            padding: 5px 20px;
+        }
+
+        nav i{
+            color: white;
+            cursor: pointer;
+        }
+        .header{
+            padding: 10vh 20vh;
+        }
+
+        .header h1{
+            font-size: 4vw;
+            text-align: center;
+            z-index: 9;
+        }
+
+        .header span{
+            padding: 5px 20px;
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+
+        }
+
+        .header h4{
+            border-bottom: solid white .5px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .aibox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .aitools{
+            /* border: solid white; */
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            box-shadow: 0px 0px 10px #9900E4;
+            padding: 20px 20px;
+            height: auto;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            margin: 2vh;
+            
+        }
+
+        .aitools img{
+            height: 20vh;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+        
+        .aitools H1{
+            font-size: 1.5vw;
+            width: 40vh;
+            height: auto;
+        }
+
+        .aitools h4{
+            height: auto;
+            width: 40vh;
+        }
+
+        .aitools button{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+        }
+
+        .aitools a{
+            text-decoration: none;
+            color: white;
+            width: 90%;
+            padding: 10px 20px;
+            background-color: #9900E4;
+            color: white;
+            border-radius: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+        
+.coffee{
+    border-top: solid white 1px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.coffee img{
+    height: 5vh;
+}
+
+.coffee span{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #9900E4;
+    margin-top: 2vh;
+}
+
+        @media (max-width:600px){
+             
+        nav{
+            color: white;
+            border-bottom: solid white;
+            padding: 5px 20px;
+        }
+
+        nav i{
+            color: white;
+            cursor: pointer;
+        }
+        .header{
+            padding: 10px;
+        }
+
+        .header h1{
+            font-size: 6vw;
+            text-align: center;
+            z-index: 9;
+        }
+
+        .header span{
+            background: linear-gradient(to bottom right, #0087FE,#9F41EF,#8C97E0,#9379E4);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 200px #9900E4);
+            z-index: 8;
+
+        }
+
+        .header h4{
+            border-bottom: solid white .5px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+              
+.coffee{
+    border-top: solid white 1px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.coffee img{
+    height: 3vh;
+}
+
+.coffee span{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #9900E4;
+    margin-top: 2vh;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1><i class="ri-arrow-left-line" onclick="window.location='index.html'"></i></h1>
+        </nav>
+        <div class="header">
+            <h1>Discover All <span>Ai Tools</span> Which Can Help You In Coding</h1>
+            <h4>
+                Find The Bestest AI Tools Picked From All Over The Internet Which Will Be helpful In Your Coding And Other tasks
+            </h4>
+        </div>
+        <div class="aibox" data-tilt>
+       
+    </div>
+</div>
+<div class="coffee">
+    <h3>support this project</h3>
+    <span><a href="" target="_blank"><img src="https://influencermarketinghub.com/wp-content/uploads/2021/04/BuyMeACoffee.png" alt=""></a></span>
+</div>
+    </main>
+    <script src="https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js"></script>
+    <script>
+        var arr =[
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/07/ai-code-converter-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"AI Code Convertor",descripion:"Generate code and convert code from one programming language to another.",link:"https://aicodeconvert.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/ai-code-reviewer-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Ai Code reviewer",descripion:"Improve your code with AI Code Reviewer",link:"https://ai-code-reviewer.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/codeconvert-ai-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"CodeConvert Ai",descripion:"AI-powered code conversion across programming languages",link:"https://www.codeconvert.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/taiga-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Taiga",descripion:"Meet Taiga. Your AI coding mentor accessible via Slack.",link:"https://asktaiga.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/fix-my-code-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Fix My Code",descripion:"Fix My Code is an AI-based tool offered by UserWay that aims to optimize code to meet WCAG 2.1 AA standards.",link:"https://userway.org/fixmycode/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/whybug-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"WhyBug",descripion:"Whybug Explain is a tool designed to assist developers in quickly identifying the root cause of errors in their code.",link:"https://explain.whybug.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/parsagon-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Parsagon",descripion:"Create browser automations with natural language",link:"https://parsagon.io/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/07/debugcode-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"debug Code",descripion:"Debug your code effortlessly with DebugCode.AI, a state-of-the-art AI-powered debugging tool",link:"https://codedamn.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/07/whatthediff-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"What The Diff",descripion:"Code review assistant saves time u0026 provides pull request summaries.",link:"https://whatthediff.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/buildt-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Buildt",descripion:"AI-powered search to find u0026 modify code by describing what it does.",link:"https://www.buildt.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/pseudo-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"PSEUDO",descripion:"Transforming Code into Human-readable Pseudocode",link:"https://pseudoai.vercel.app/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/refraction-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Refraction",descripion:"A tool for code generation in 56 languages.",link:"https://refraction.dev/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/fine-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Fine",descripion:"A tool to generate code with AI agents.",link:"https://www.fine.dev/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/imaginary-programming-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"ImaginaryProgramming",descripion:"Code generation using TypeScript and GPT runtime.",link:"https://imaginary.dev/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/07/timecomplexity-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Time Complexity",descripion:"TimeComplexity.ai is an AI tool that analyzes the runtime complexity of code and returns the results.",link:"https://www.timecomplexity.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/literally-anything-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Litreally Anything",descripion:"A tool to build shareable web based apps.",link:"https://www.literallyanything.io/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/07/jam-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Jam",descripion:"A code debugging tool with code analysis and suggestions.",link:"https://jam.dev/jamgpt"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/metabob-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Metabob",descripion:"A tool for refactoring and debugging code.",link:"https://aiworldtools.com/ai-tools-list/ai-code-tools/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/autoregex-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"AutoRagex",descripion:"AI-powered Regex generator u0026 English translator.",link:"https://www.autoregex.xyz/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/kodezi-ai-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Kodezi Ai",descripion:"AI developer tool assistant that auto-corrects your code",link:"https://kodezi.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/duino-code-generator-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Duino",descripion:"Automate Arduino coding with AI, freeing up time for tinkering.",link:"https://www.duinocodegenerator.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/mutable-1024x979.jpg?strip=all&lossy=1&ssl=1",heading:"Mutable",descripion:"Build fast with AI for production-level quality.",link:"https://mutable.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/mentat-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Mentat",descripion:"Your AI-Powered Coding Assistant",link:"https://www.mentat.ai/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/10/cerelyze-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Cerelyze",descripion:"A tool to translate research papers into useable code.",link:"https://www.cerelyze.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/08/coderbuds-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"CoderBuds",descripion:"Coderbuds is a code review tool that automates the code review, feedback and recommendations",link:"https://coderbuds.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/flatlogic-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Flatlogic",descripion:"Generate a database schema based on the user’s description of the app.",link:"https://flatlogic.com/"},
+            {img:"https://ezjdomc77mb.exactdn.com/wp-content/uploads/2023/06/wizi-1024x989.jpg?strip=all&lossy=1&ssl=1",heading:"Wizi",descripion:"A tool for frontend developers to search and create code.",link:"https://wizi.ai/"}
+           
+        ]
+        var wrapper = document.querySelector(".aibox")
+        var clutter = ""
+
+        arr.forEach(function(arr){
+            clutter+=`<div class="aitools" data-tilt>
+            <img src="${arr.img}" alt="ai tool">
+            <h1>${arr.heading}</h1>
+            <h4>${arr.descripion}</h4>
+            <a href="${arr.link}" target="_blank">Check out</a>
+        </div>
+            `
+        })
+
+        wrapper.innerHTML = clutter
+
+      
+        
+    </script>
+</body>
+</html>
